@@ -1,0 +1,78 @@
+.header {
+  text-align: center;
+}
+
+.input{
+  text-align: center;
+  font-family: Trebuchet MS, sans-serif;
+}
+
+#sbreakButton{
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+#pause{
+  background-color: #E70038;
+  color: #FDE7EF;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+#resume{
+  background-color: #E70038;
+  color: #FDE7EF;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+#button{
+  width: 15%;
+  padding: 15px;
+  background-color: #E70038;
+  color: #FDE7EF;
+  font-size:20px;
+  border-radius: 20px;
+
+}
+
+#timer{
+  text-align:center;
+  display: none;
+}
+
+#infoText{
+  color: #E70038;
+  margin: 10px;
+  font-size: 20px;
+}
+
+#time{
+  margin: 0px;
+  text-align: center;
+  font-size: 600%;
+  color: black;
+}
+
+#userInput{
+  display: block;
+  color: #E70038;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+h1{
+  margin-bottom: 0px;
+  font-size: 70px;
+  color: #E70038;
+  font-family: Chalkduster, fantasy;
+  font-weight: bold;
+}
+
+#tomato{
+  margin: auto;
+}
+
+#tomatoWalking{
+  margin: auto;
+}

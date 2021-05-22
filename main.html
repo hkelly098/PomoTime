@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <title id = "title"> Pomodoro Technique Timer </title>
+    <meta charset="utf-8"> <!-- usually utf-8 for all, so that all browsers have same look -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> <!-- looks good on all devices -->
+    <link rel="stylesheet" type="text/css" href="mystyles.css">
+    <script src="exe.js"></script>
+  </head>
+
+  <body style = "background-color: #FDE7EF;">
+
+
+
+    <div class = "header" style = "text-align: center">
+      <h1> PomoTime </h1>
+      <img id = "tomato" src = "tomato-dribbble.png" alt = "Tomato Walking" style = "width:40%; display:block;">
+      <img id = "tomatoWalking" src = "tomato-dribbble.gif" alt = "Tomato Walking" style = "width:40%; display:none;">
+    </div>
+
+
+    <div class = "input">
+
+        <div id= "userInput">
+
+          <form>
+            Timer : <input type = "text" id = "timerTime" value = "25" size = "3"> mins
+          </form>
+
+          <form>
+            Short Break : <input type = "text" id = "sbreak" value = "5" size = "3"> mins
+          </form>
+
+          <form>
+            Long Break : <input type = "text" id = "lbreak" value = "10" size = "3"> mins
+          </form>
+
+        </div>
+
+        <div id = "timerButton">
+
+          <button id = "button" onClick = "startTimer('timerTime')" >
+            Start PomoTime!
+          </button>
+
+        </div>
+
+
+
+      <div id = "timer">
+
+        <div id = "time">
+          <span id = "minute">25</span>
+          <span> : </span>
+          <span id = "second">00</span>
+        </div>
+
+        <div id = "infoText">
+        <p id = "timerText" style = "display:none; margin: 10px">On Break</p>
+        <p id = "pomoCounter">1 Pomodoro</p>
+
+        <button id = "sbreakButton" style = "display: none; text-align: center" onClick = "shortBreak()"> Start short break! </button>
+        <button id = "lbreakButton" style = "display: none; text-align: center" onClick = "longBreak()"> Start long break! </button>
+
+        <div id = "controls">
+          <span>
+            <button id = "pause" onClick = "pause()"> Pause </button>
+            <button id = "resume" onClick = "resume()"> Resume </button>
+          </span>
+        </div>
+
+        <audio id = "alarm">
+          <source src = "alarm.mp3" type="audio/mpeg">
+        </audio>
+
+      </div>
+
+    </div>
+
+
+
+  </body>
+</html>
